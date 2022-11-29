@@ -1,0 +1,15 @@
+@ /bin	contains binaries or user executable files which are available to all users.
+@ /sbin	Contains system binaries files only superuser can use.
+@ /boot Files that required for starting the system.
+@ /home User's can save their own data or each directory has their home working directory.
+@ /dev	Device files 
+@ /etc 	configuration files.
+@ /lib 	shared library files used by different applications.
+@ /media external attached storage that automatically mounted
+@ /mnt	its like media 
+@ /tmp	temporary files 
+@ /proc	It contains information about computer hardware
+@ /sys 	it contains information about device drivers and some kernel features
+@ /srv	Server files
+@ /usr	Subdirectory for binary files shared library and some link files
+@ /var	it contains log files
