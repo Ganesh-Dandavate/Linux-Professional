@@ -9,7 +9,7 @@ cat filename
 cat filename1 filename2
  
 # displaying the line numbers
-can -n filename
+cat -n filename
  
 # concatenating 2 files
 cat filename1 filename2 > filename3
