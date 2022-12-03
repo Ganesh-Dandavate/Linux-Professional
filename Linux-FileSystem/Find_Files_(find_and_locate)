@@ -1,0 +1,66 @@
+########################################
+## Finding Files ( Find and locate )
+########################################
+
+For ubuntu => sudo apt install plocate
+# after install update database
+sudo updatedb
+sudo mandb	=>	update index database caches
+
+# finding file by name
+locate filename # => filename is expanded to *filename*
+locate -i filename # => the filename is case insensitive
+locate -b '\filename' # => finding by exact name
+
+# Find command path
+which <command>		=> 	which locate
+which -a <command>		
+
+# Disadvantage of locate command is this command not search files in real time
+if we delete file and we use locate command, then also locate command will search 
+that file so everytime we need to update the database for use of locate
+
+## FIND ##
+find PATH OPTIONS
+ 
+# Example: find ~ -type f -size +1M # => finding all files in ~ bigger than 1 MB
+ 
+## Options:
+# -type f (regular file), d (directory), l (symbolik link), s (socket), p (FIFO)
+# -name filename
+# -iname filename # => case-insensitive
+# -size n, +n, -n
+# -perm permissions
+# -links n, +n, -n
+# -atime n, -mtime n, ctime n
+# -user owner
+# -group group_owner
+
+# sudo find /etc -type f -mtime 0 -exec cp {} /home/backup \;
+above command find and copies file where modified in last 24 hours into the /home/backup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
