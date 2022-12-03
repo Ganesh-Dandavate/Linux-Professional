@@ -1,0 +1,22 @@
+#####################################################
+# Archiving and Compressing Files
+#####################################################
+
+# Archiving file is collection of files and directories that are stored in one file.
+# Compress file is a collection of files and diroctories that are stored in a way that uses less disk space.  
+# tar is used for archiving as well as compressing files
+
+tar -cvzf <filename>.tar.gz <Files_or_Directory>
+-c — create a new archive.
+-f - Specifie file name
+-t - show the content of the tar file
+-v - show the progress of the files being archived
+-x - extract files from archive
+-z - compress the tar file with gzip
+-j - compress the tar file with bzip2
+
+-C - use capital C for extracting file in another location like
+tar -xzvf myfile.tar.gz -C /home/student/mybackup
+
+Trick for backup
+tar -cjvf etc-$(date +%F).tar.bz2 /etc 	=> when you run it will create the file with current date
