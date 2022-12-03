@@ -2,6 +2,13 @@
 ## File Timestamps and Date
 ##########################
  
+Linux File Timestamps
+Linux file has three timestamps
+1. atime	=>	the last time the file was read (ls -lu)
+2. mtime	=>	the last time the content of the file was modified (ls -l,ls -lt)
+3. ctime	=>	the last time when file metadata was changed (ls -lc)
+
+
 # displaying atime
 ls -lu
  
